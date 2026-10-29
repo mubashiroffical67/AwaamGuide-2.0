@@ -8,37 +8,46 @@
 
 ---
 
-## 📌 Executive Summary
-Millions of Pakistani citizens miss out on subsidized financing, health equity, and civic benefits simply because bureaucratic circulars are buried in dense legal terminology and inaccessible languages. 
+## 📌 Problem & Inspiration
+Millions of citizens across Pakistan are eligible for interest-free micro-loans (PM Youth Loan), healthcare subsidies (Sehat Card), housing grants, and financial welfare (BISP). However, they miss out because government circulars are published in dense bureaucratic English or standard formal text.
 
-**AwaamGuide (عوام گائیڈ)** bridges this socio-linguistic barrier. Built entirely on open-source foundations using **Google Gemma**, AwaamGuide allows everyday citizens to talk, listen, scan physical documents, and receive grounded civic roadmaps in **8 regional languages** (Sindhi, Pashto, Punjabi, Saraiki, Balochi, Roman Urdu, Urdu, and English).
-
----
-
-## 🏆 Target Prize Categories
-
-1. **Best Use of Gemma:**
-   - **Multimodal Experience:** Integrates visual document inspection for utility bills, NADRA token receipts, and circulars alongside text generation.
-   - **Community Focus:** Directly addresses regional digital literacy and public service delivery for underrepresented communities.
-   - **Lightweight Efficiency:** Runs low-latency open weights locally via Ollama (`gemma2:2b`) or serverless via Hugging Face Inference API.
-
-2. **Best Open-Source AI Project (DigitalOcean):**
-   - **100% Open Weights & Open Source:** Powered strictly by Gemma, Streamlit, and standard open Python libraries with zero proprietary lock-in.
+Furthermore, linguistic and literacy diversity means many citizens speak regional languages like **Pashto, Sindhi, Punjabi, Saraiki, or Balochi**, and struggle to decode complex paperwork. **AwaamGuide (عوام گائیڈ)** transforms **Google Gemma** into an empathetic, regional civic companion that can listen, talk, inspect physical documents, and guide citizens in their mother tongue.
 
 ---
 
-## ✨ Key Features
+## 🏆 Prize Category Alignment
 
-| Feature | Description |
-| :--- | :--- |
-| 🎙️ **Voice-First Interaction** | Citizens with low literacy can speak directly into the browser microphone to query public services. |
-| 🌐 **8 Regional Languages** | Native script and conversational support for **Sindhi (سنڌي)**, **Pashto (پښتو)**, **Punjabi (پنجابی)**, **Saraiki (سرائیکی)**, **Balochi (بلوچی)**, **Roman Urdu**, **Urdu**, and **English**. |
-| 📸 **Multimodal Inspection** | Upload images of electricity/gas bills or rejection notices to verify eligibility criteria instantly. |
-| 🔊 **Voice Synthesis (TTS)** | Reads synthesized guidance aloud so users do not need to read long text outputs. |
-| 🧮 **Interactive Loan Calculator** | Real-time 0% to 7% tier calculation, subsidy breakdowns, and age eligibility filters for PM Youth Schemes. |
-| ✍️ **Petition & Grievance Drafter** | Automatically formats and outputs downloadable formal legal representation letters addressed to Deputy Commissioners and bank managers. |
-| 📱 **Offline USSD Shortcodes** | Built-in offline reference cards for national SMS verification gates (8171, 8500, 9966, 8009). |
+1. **Best Use of Gemma:**[cite: 1]
+   - **Multimodal Experience:** Incorporates visual document inspection for utility bills, rejection letters, and NADRA receipts alongside conversational generation[cite: 1].
+   - **Community Focused:** Solves critical civic access problems for underserved, multilingual populations[cite: 1].
+   - **Rapid Prototyping:** Powered by lightweight open weights (`gemma2:2b` via Ollama or Hugging Face Inference API)[cite: 1].
+
+2. **Best Open-Source AI Project (DigitalOcean):**[cite: 1]
+   - Built 100% on open weights (Google Gemma), open-source Python frameworks (Streamlit), and free tooling with zero proprietary model dependencies[cite: 1].
 
 ---
 
-## 🏗️ Technical Architecture
+## ✨ Features
+
+- 🎙️ **Voice-First Input:** Speak inquiries directly using the native browser microphone.
+- 🌐 **8 Regional Dialects:** Native script reasoning for **Sindhi (سنڌي)**, **Pashto (پښتو)**, **Punjabi (پنجابی)**, **Saraiki (سرائیکی)**, **Balochi (بلوچی)**, **Roman Urdu**, **Urdu**, and **English**.
+- 📸 **Multimodal Document Scanner:** Upload photos of utility bills to extract consumer numbers and verify scheme eligibility criteria[cite: 1].
+- 🔊 **Voice Audio Playback (TTS):** Synthesizes guidance aloud for non-literate citizens.
+- 🧮 **Interactive Loan Calculator:** Real-time 0% to 7% tier calculation, age verification, and monthly payment estimates.
+- ✍️ **Petition & Grievance Drafter:** Formats and outputs downloadable legal representation letters addressed to Deputy Commissioners and bank managers.
+- 📱 **Offline USSD Shortcodes:** Built-in offline cards for national SMS verification codes (8171, 8500, 9966, 8009).
+
+---
+
+## 🚀 Quick Start Guide
+
+### Prerequisites
+- Python 3.11 (64-bit)
+- [Ollama](https://ollama.com/) installed
+
+### 1. Clone & Set Up Virtual Environment
+```powershell
+git clone [https://github.com/YOUR_USERNAME/awaam-guide.git](https://github.com/YOUR_USERNAME/awaam-guide.git)
+cd awaam-guide
+py -3.11 -m venv venv
+.\venv\Scripts\activate
